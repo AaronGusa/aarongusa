@@ -1,0 +1,63 @@
+header {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid  blue;
+    overflow: hidden;
+    flex-shrink: 1;
+
+}
+
+.move-container {
+    flex-grow: 1;
+}
+
+.move-head {
+    flex-shrink: 1;
+    position: relative;
+    animation: title 15s linear infinite alternate;
+}
+
+@keyframes title {
+    0%   {color:red; left:0px; top:0px;}
+  /* 25%  {background-color:yellow; left:200px; top:0px;} */
+  50%  {color:rgb(0, 0, 48); left:100%; top:0;}
+  /* 75%  {background-color:green; left:0px; top:200px;} */
+  100% {color:red; left:0px; top:0px;}
+}
+
+body, html, #app {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #app {
+    overflow: hidden;
+    touch-action: pan-up;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #app h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+  }
+  
+  #app a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #app canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
