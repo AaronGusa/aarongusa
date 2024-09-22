@@ -4,7 +4,7 @@ header {
     border: 5px solid  blue;
     overflow: hidden;
     flex-shrink: 1;
-
+    z-index: 0;
 }
 
 .move-container {
