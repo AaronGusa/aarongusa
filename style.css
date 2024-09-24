@@ -14,13 +14,13 @@ header {
 .move-head {
     flex-shrink: 1;
     position: relative;
-    animation: title 15s linear infinite alternate;
+    animation: title 105s linear infinite alternate;
 }
 
 @keyframes title {
     0%   {color:red; left:0px; top:0px;}
   /* 25%  {background-color:yellow; left:200px; top:0px;} */
-  50%  {color:rgb(0, 0, 48); left:100%; top:0;}
+  50%  {color:rgb(255, 255, 255); left:100%; top:0;}
   /* 75%  {background-color:green; left:0px; top:200px;} */
   100% {color:red; left:0px; top:0px;}
 }
@@ -30,12 +30,18 @@ header {
 :root {
   --color-bg1: rgb(3, 1, 36);
   --color-bg2: rgb(32, 24, 0);
-  --color1: 18, 113, 255;
+  /* --color1: 18, 113, 255;
   --color2: 107, 74, 255;
   --color3: 100, 100, 255;
   --color4: 50, 160, 220;
   --color5: 80, 47, 122;
-  --color-interactive: 140, 100, 255;
+  --color-interactive: 140, 100, 255; */
+  --color1: 1, 25, 60;
+  --color2: 49, 41, 87;
+  --color3: 13, 13, 84;
+  --color4: 47, 78, 45;
+  --color5: 41, 16, 73;
+  --color-interactive: 56, 50, 73;
   --circle-size: 80%;
   --blending: hard-light;
 }
@@ -62,9 +68,10 @@ html, body {
 }
 
 body {
-  background: #FFF;
+  background: #000000;
   font-family: 'Montserrat', sans-serif;
   overflow: hidden;
+  display: flex;
 }
 
 h1, h2, h3 {
@@ -72,7 +79,22 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
-.card {
+img {
+  border-radius: 15px;
+  box-shadow: 2px 2px 15px black;
+}
+
+.mainer {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  
+}
+
+/* .card {
   position: absolute;
   z-index: 10;
   top: 50%;
@@ -99,7 +121,7 @@ h1, h2, h3 {
     opacity: 0.3;
     filter: blur(.5px);
     mix-blend-mode: hard-light;
-  }
+  } */
 
 
   .noise {
@@ -117,7 +139,7 @@ h1, h2, h3 {
     z-index: 2;
     text-shadow: -3px 0px 2px rgba(0,0,0,0.1);
   }
-}
+
 
 h1 {
   font-size: 3rem;

@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         requestAnimationFrame(move);
     };
 
-    window.addEventListener('mouseover', (event) => {
+    window.addEventListener('mousemove', (event) => {
         tgX = event.clientX;
         tgY = event.clientY;
     });
