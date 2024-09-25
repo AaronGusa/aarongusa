@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     move();
 });
 
-const words = document.querySelectorAll('.flexrowwrapM h1, .flexrowwrapM h3');
+const words = document.querySelectorAll('.flexrowwrapM h1, .flexrowwrapM h2, .flexrowwrapM h3');
 
 words.forEach(word => {
     word.addEventListener('mouseover', () => {

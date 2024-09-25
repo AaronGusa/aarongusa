@@ -125,6 +125,10 @@ img {
   margin: 0;
 }
 
+.flexgrow {
+  flex-grow: 1;
+}
+
 .flexrow {
   display: flex;
   flex-direction: row;
@@ -145,12 +149,20 @@ img {
 
 }
 
-.flexrowwrapM h1, .flexrowwrapM h3 {
+.flexrowwrapM h1, .flexrowwrapM h2, .flexrowwrapM h3 {
   transition: transform 0.9s ease;
 }
 
 .flexrowwrapM h1 {
   font-family: "Bebas Neue", sans-serif;
+}
+
+.flexrowwrapM h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.5rem;
 }
 
 .flexrowwrapM h3 {
@@ -217,8 +229,8 @@ img {
 }
 
 .imagePic {
-  border-radius: 15px;
-  box-shadow: 2px 2px 15px black;
+  /* border-radius: 15px;
+  box-shadow: 2px 2px 15px black; */
   height: 100%;
 
 }
