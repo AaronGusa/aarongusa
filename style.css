@@ -70,7 +70,7 @@ header {
   --color3: 240, 234, 234;
   --color4: 211, 217, 228;
   --color5: 240, 242, 223;
-  --color-interactive: 56, 50, 73;
+  --color-interactive: 255, 254, 250;
   --circle-size: 80%;
   --blending: soft-light;
 }
@@ -134,14 +134,31 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 2px;
+}
+
+.flexrowwrapM {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2px;
 
 }
 
-
-.flexrowwrap h1, .flexrowwrap h3 {
-  transition: transform 0.3s ease;
+.flexrowwrapM h1, .flexrowwrapM h3 {
+  transition: transform 0.9s ease;
 }
+
+.flexrowwrapM h1 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.flexrowwrapM h3 {
+  font-family: "Poiret One", sans-serif;
+  
+}
+
+
 
 .flexColwrap {
   display: flex;
