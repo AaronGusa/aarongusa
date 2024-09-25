@@ -1,3 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Julius+Sans+One&family=Poiret+One&display=swap');
+
+.josefin-sans-200 {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poiret-one-regular {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.julius-sans-one-regular {
+  font-family: "Julius Sans One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 header {
     display: flex;
     flex-direction: row;
@@ -28,22 +57,22 @@ header {
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 :root {
-  --color-bg1: rgb(3, 1, 36);
-  --color-bg2: rgb(32, 24, 0);
+  --color-bg1: rgb(255, 255, 255);
+  --color-bg2: rgb(187, 178, 151);
   /* --color1: 18, 113, 255;
   --color2: 107, 74, 255;
   --color3: 100, 100, 255;
   --color4: 50, 160, 220;
   --color5: 80, 47, 122;
   --color-interactive: 140, 100, 255; */
-  --color1: 1, 25, 60;
-  --color2: 49, 41, 87;
-  --color3: 13, 13, 84;
-  --color4: 47, 78, 45;
-  --color5: 41, 16, 73;
+  --color1: 237, 240, 234;
+  --color2: 234, 240, 240;
+  --color3: 240, 234, 234;
+  --color4: 211, 217, 228;
+  --color5: 240, 242, 223;
   --color-interactive: 56, 50, 73;
   --circle-size: 80%;
-  --blending: hard-light;
+  --blending: soft-light;
 }
 
 
@@ -54,7 +83,7 @@ header {
   list-style:none;
   text-decoration:none;
   box-sizing:border-box;
-  color:#FFF;
+  color:#0f101f;
   background: transparent;
   border:none;
 }
@@ -80,18 +109,112 @@ h1, h2, h3 {
 }
 
 img {
+  height: auto;
+}
+
+.id {
+  border: 5px dotted blue;
+}
+
+.containerHeight {
+  height: 100%;
+}
+
+.genPad {
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexrowwrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+
+
+.flexrowwrap h1, .flexrowwrap h3 {
+  transition: transform 0.3s ease;
+}
+
+.flexColwrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.flexright {
+  justify-content: flex-end;
+}
+
+.flexBetween {
+  justify-content: space-between;
+}
+
+.flexAround {
+  justify-content: space-around;
+}
+
+.flexEvenly {
+  justify-content: space-evenly;
+}
+
+.justRight {
+  align-items: right;
+  justify-content: right;
+  text-align: right;
+}
+
+.imageSmall {
+  width: 65px;
+  height: auto;
+  
+}
+
+.spinner {
+  position: relative;
+  transform-origin: calc(50% + 400px);
+
+  animation: spinner 2s ease-in-out ;
+}
+
+@keyframes spinner {
+  
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(270deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+
+}
+
+.imagePic {
   border-radius: 15px;
   box-shadow: 2px 2px 15px black;
+  height: 100%;
+
 }
 
 .mainer {
   position: absolute;
-  top: 2%;
-  left: 2%;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   z-index: 10;
-  
+  width: 100%;
+  height: 100vh
 }
 
 /* .card {
