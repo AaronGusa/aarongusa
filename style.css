@@ -26,11 +26,14 @@
   font-style: normal;
 }
 
+.fontsize25 {
+  font-size: 4.5rem;
+}
+
 
 header {
     display: flex;
     flex-direction: row;
-    border: 5px solid  blue;
     overflow: hidden;
     flex-shrink: 1;
     z-index: 0;
